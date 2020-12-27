@@ -1,0 +1,28 @@
+config-version: 3
+
+# Examples on how to use blacklist-command-list
+#
+# blacklist-command-list:
+#   - "tp"
+#   - "home"
+#
+# This will block /tp and /home commands.
+#
+# blacklist-command-list:
+#   - "tp"
+#   - ":home"
+#
+# This will block /tp, /home and /*:home (the syntax for running a command in a specific plugin) commands entirely.
+#
+# Remove the line with [] first, though.
+
+blacklist-command-list: []
+
+# Use shorter prefix for reply messages
+
+short-prefix: false
+
+# Teleport the player to the final waypoint when the path finishes playing.
+# This ensures the player ends up at exactly the final waypoint, but causes a head bobbing animation.
+
+final-waypoint-teleport: true

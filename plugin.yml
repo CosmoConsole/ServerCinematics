@@ -1,0 +1,41 @@
+name: ServerCinematics
+main: email.com.gmail.cosmoconsole.bukkit.camera.ServerCinematics
+version: 1.16
+api-version: 1.13
+description: Acts as a server-side replacement for Camera Studio Mod.
+author: CosmoConsole
+authors: [Kisko, Pietu1998]
+commands:
+   camera:
+      aliases: [cam]
+      description: Use ServerCinematics features.
+      usage: /<command>
+permissions:
+   servercinematics.*:
+      description: Gives access to all ServerCinematics features except servercinematics.cmd.
+      default: op
+      children:
+         servercinematics.use: true
+         servercinematics.play: true
+         servercinematics.edit: true
+         servercinematics.fplay: true
+   servercinematics.use:
+      description: Gives access to all ServerCinematics features except servercinematics.cmd.
+      default: op
+      children:
+         servercinematics.play: true
+         servercinematics.edit: true
+         servercinematics.fplay: true
+   servercinematics.play:
+      description: Allows playing paths.
+      default: op
+   servercinematics.edit:
+      description: Allows editing paths.
+      default: op
+   servercinematics.fplay:
+      description: Allows playing paths for other people.
+      default: op
+   servercinematics.cmd:
+      description: Allows setting path commands. Not granted by default because of the security implications.
+      default: false
+
